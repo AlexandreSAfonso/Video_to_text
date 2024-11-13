@@ -24,7 +24,6 @@ class Audio:
 
         video = VideoFileClip(video_path)
 
-              
         if not os.path.exists(output_path):
             os.makedirs(output_path)
             print(f'Folder create: "{output_path}"')

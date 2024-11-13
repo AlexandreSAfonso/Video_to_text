@@ -45,5 +45,5 @@ class YoutubeDonwloader:
 if __name__ == '__main__':
     yt = YoutubeDonwloader()
     # yt_link = 'https://www.youtube.com/watch?v=nSKlgF7ilfM'
-    yt_link = 'https://www.youtube.com/watch?v=cOpAm20ugjU'
+    yt_link = 'https://www.youtube.com/watch?v=nSKlgF7ilfM'#'https://www.youtube.com/watch?v=cOpAm20ugjU'
     yt.baixar_video(yt_link)
