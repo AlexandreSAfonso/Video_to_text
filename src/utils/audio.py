@@ -35,9 +35,10 @@ class Audio:
         return audio_path
 
     def transcribe(audio_path:str) -> str:
-        print(f'Transcr WAV audio from {audio_path} to text')
+        print(f'transcribe WAV audio from {audio_path} to text')
         audio_path = audio_path.replace("'", "")
 
+        #todo change to model with cuda 
         model = WhisperModel('medium',device="cuda") #'cuda'
 
         result = model.transcribe(audio_path, language='pt')
@@ -47,8 +48,8 @@ class Audio:
             transcribe += segment.text + ' '
 
         output_path = os.path.dirname(audio_path)
-        output_path = output_path.replace('audio', 'transc')
-        print(f'Output transc path {output_path}')
+        output_path = output_path.replace('audio', 'transcribe')
+        print(f'Output transcribe path {output_path}')
         
         base_name = os.path.splitext(os.path.basename(output_path))[0]
         transcribe_path = f'{output_path}/{base_name}.md'
@@ -72,4 +73,4 @@ if __name__ == '__main__':
     
     audio_path = Audio.extrair(video_path)
     
-    adio_transcr = Audio.transcribe(audio_path)
+    adio_transcribe = Audio.transcribe(audio_path)

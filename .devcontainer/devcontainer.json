@@ -9,6 +9,21 @@
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"njpwerner.autodocstring",
+				"mikoz.black-py",
+				"oderwat.indent-rainbow",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"esbenp.prettier-vscode",
+				"tal7aouy.rainbow-bracket",
+				"humao.rest-client",
+				"ChakrounAnas.turbo-console-log"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.

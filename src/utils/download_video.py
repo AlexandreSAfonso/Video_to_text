@@ -33,10 +33,10 @@ class YoutubeDonwloader:
 
         video_path = stream.download(output_path,title)
 
-        print(f'Dowload video {video_title} on {video_path}')
+        print(f'Download video {video_title} on {video_path}')
         
         video_path_return = f'{output_path}/{title}'
-        print(f'Dowload video on {video_path_return}')
+        print(f'Download video on {video_path_return}')
         
         return video_path_return
 
@@ -45,5 +45,6 @@ class YoutubeDonwloader:
 if __name__ == '__main__':
     yt = YoutubeDonwloader()
     # yt_link = 'https://www.youtube.com/watch?v=nSKlgF7ilfM'
-    yt_link = 'https://www.youtube.com/watch?v=nSKlgF7ilfM'#'https://www.youtube.com/watch?v=cOpAm20ugjU'
+    #yt_link = 'https://www.youtube.com/watch?v=cOpAm20ugjU'
+    yt_link = 'https://www.youtube.com/watch?v=JJPO-DjhW4s'
     yt.baixar_video(yt_link)
